@@ -1,103 +1,101 @@
-# First REST API with Spring Boot
-
-This project is a beginner-friendly RESTful API built with **Java** and **Spring Boot**. It demonstrates the fundamental principles of REST architecture and provides basic CRUD operations on a product catalog. The goal of this project is to help newcomers understand how to create and manage REST APIs in a clean, structured manner using Spring Boot.
-
-## 📦 Features
-
-- ✅ Create new products
-- 🔍 Retrieve single or multiple products
-- ✏️ Update existing products
-- ❌ Delete products
-- 💾 Uses H2 in-memory database
-- 🧪 Easy to test with tools like Postman or curl
-
-## 🛠 Technologies Used
-
-- Java 17+
-- Spring Boot
-- Maven
-- H2 Database
-- Spring Web
-
-## 📁 Project Structure
-
-```
-src/
-└── main/
-    └── java/com/springstarter/first_rest_api/
-        ├── FirstRestApiApplication.java
-        └── product/
-            ├── api/
-            │   ├── ProductController.java
-            │   ├── request/
-            │   │   ├── ProductRequest.java
-            │   │   └── UpdateProductRequest.java
-            │   └── response/
-            │       └── ProductResponse.java
-            ├── domain/
-            │   └── Product.java
-            └── repository/
-                └── ProductRespository.java
-```
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-Ensure the following tools are installed:
-
-- Java 17 or higher
-- Maven
-
-### Run the Application
-
-```bash
-git clone <repository-url>
-cd first-rest-api-java-master
-./mvnw spring-boot:run
-```
-
-The server will start at `http://localhost:8080`.
-
-## 🔗 API Endpoints
-
-| Method | Endpoint           | Description             |
-|--------|--------------------|-------------------------|
-| GET    | /products          | Get all products        |
-| GET    | /products/{id}     | Get product by ID       |
-| POST   | /products          | Create a new product    |
-| PUT    | /products/{id}     | Update existing product |
-| DELETE | /products/{id}     | Delete a product        |
-
-## 🗃 Database Access (H2 Console)
-
-The application uses an H2 in-memory database. You can access the H2 console at:
-
-```
-http://localhost:8080/h2-console
-```
-
-**JDBC URL:** `jdbc:h2:mem:testdb`  
-**Username:** `sa`  
-**Password:** *(leave blank)*
-
-## 📸 Screenshots
-
--![put](https://github.com/user-attachments/assets/c66c076a-3236-44a8-a586-620057826c3f)
-![post](https://github.com/user-attachments/assets/3ff00d43-402b-423c-9e7e-f1570a21a147)
-![get-all](https://github.com/user-attachments/assets/ada0d031-ab43-484a-908f-0388b6fd2ed1)
-![get](https://github.com/user-attachments/assets/0e995323-068c-457b-8035-d3381f26a52c)
-![delete](https://github.com/user-attachments/assets/15ce1df1-fe13-4d81-b06c-18a16029d7f3)
-![database](https://github.com/user-attachments/assets/e98f9e9f-6177-41bb-9f65-d945f9b0e177)
-
-
-
-
-
-## 📄 License
-
-This project is licensed under the MIT License. You are free to use, modify, and distribute this code as needed.
+# Product Management REST API  
+**Spring Boot Backend System**
 
 ---
 
-Happy Coding! 🎉
+## 1. Introduction
+
+This project is a **Spring Boot–based RESTful web service** developed to demonstrate the fundamental principles of backend application development, REST architecture, and layered system design.
+
+The system provides a simple **Product Management API** that allows clients to perform Create, Read, Update, and Delete (CRUD) operations on product resources. It is intended for academic and learning purposes, focusing on proper architectural separation, maintainability, and clarity.
+
+---
+
+## 2. Objectives of the Project
+
+The main academic objectives of this project are to:
+
+- Understand the structure of a Spring Boot application  
+- Implement RESTful web services using Spring Web  
+- Apply layered architecture (Controller, Service, Repository)  
+- Practice CRUD operations with a database  
+- Demonstrate separation of concerns in backend systems  
+- Understand request/response handling using DTOs  
+
+---
+
+## 3. Scope of the System
+
+The system allows users (clients) to:
+
+- Add new products  
+- Retrieve all products  
+- Retrieve a product by its ID  
+- Update existing product details  
+- Delete products from the system  
+
+The project focuses only on backend development. No graphical user interface (GUI) is included.
+
+---
+
+## 4. Technologies and Tools Used
+
+- **Java** – Programming language  
+- **Spring Boot** – Application framework  
+- **Spring Web** – REST API development  
+- **Spring Data JPA** – Data persistence layer  
+- **Hibernate** – ORM framework  
+- **H2 / MySQL** – Database system  
+- **Maven** – Dependency and project management tool  
+
+---
+
+## 5. System Architecture
+
+Client → Controller → Service → Repository → Database
+
+---
+
+## 6. Project Structure
+
+(See project folders for controller, service, repository, model, and dto packages.)
+
+---
+
+## 7. API Endpoints
+
+GET `/products` – Retrieve all products  
+GET `/products/{id}` – Retrieve product by ID  
+POST `/products` – Create a new product  
+PUT `/products/{id}` – Update an existing product  
+DELETE `/products/{id}` – Delete a product  
+
+---
+
+## 8. How to Run the System
+
+Run `DemoApplication.java` and access the system via `http://localhost:8080`.
+
+---
+
+## 9. Learning Outcomes
+
+Students gain practical experience in REST API development, layered architecture, and backend system design.
+
+---
+
+## 10. Future Enhancements
+
+
+
+<img width="1894" height="1062" alt="get-all" src="https://github.com/user-attachments/assets/ef9a40a7-9aa0-41a9-ac33-2531e6f5cb11" />
+<img width="1886" height="1069" alt="get" src="https://github.com/user-attachments/assets/72cf1c5c-e390-4aa0-802b-dea74f26633f" />
+<img width="1919" height="850" alt="delete" src="https://github.com/user-attachments/assets/6f43f609-5ac4-400a-a87a-ea8a51bc4f70" />
+<img width="1919" height="850" alt="delete" src="https://github.com/user-attachments/assets/4d222009-71a2-4ccc-9a04-5e006e914188" />
+<img width="1908" height="1068" alt="database" src="https://github.com/user-attachments/assets/b9df8755-8ce0-4209-994d-89b570516b8f" />
+<img width="1894" height="1062" alt="get-all" src="https://github.com/user-attachments/assets/afc2b183-e670-420b-b8ff-bfe7e0b1fd99" />
+<img width="1886" height="1069" alt="get" src="https://github.com/user-attachments/assets/b79bd781-9ed0-448e-952e-658a706a0744" />
+<img width="1883" height="1055" alt="post" src="https://github.com/user-attachments/assets/7f7c8e51-2ed6-47f7-9b6a-4cfc56a83904" />
+
+Security integration, validation, logging, and frontend development.
+
