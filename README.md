@@ -88,9 +88,6 @@ Students gain practical experience in REST API development, layered architecture
 
 
 
-<img width="1908" height="1068" alt="database" src="https://github.com/user-attachments/assets/dbf02fb6-77bf-42bb-9cd8-9cec6188882d" />
-
-<img width="1908" height="1068" alt="database" src="https://github.com/user-attachments/assets/d36a7aca-db97-4042-97c3-5378d6c349cd" />
 <img width="1894" height="1062" alt="get-all" src="https://github.com/user-attachments/assets/ef9a40a7-9aa0-41a9-ac33-2531e6f5cb11" />
 <img width="1886" height="1069" alt="get" src="https://github.com/user-attachments/assets/72cf1c5c-e390-4aa0-802b-dea74f26633f" />
 <img width="1919" height="850" alt="delete" src="https://github.com/user-attachments/assets/6f43f609-5ac4-400a-a87a-ea8a51bc4f70" />
